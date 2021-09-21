@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./src/img/smile-regular.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clavin Personal Page</title>
     <link rel="stylesheet" href="./src/css/main.css">
@@ -14,8 +15,16 @@
 <body>
 
     <top>
-        <div class="navBar">
-            <img src="./src/img/align-justify-solid.svg">
+        <div class="navBar" >
+            <img id="navBar" src="./src/img/align-justify-solid.svg">
+        </div>
+        <div class="wholeNarBar" id="wholeNarBar">
+            <div class="navBarLogo">
+                <img id="navBarLogo" src="./src/img/align-justify-solid.svg">
+            </div>
+            <div class="backToHomePage">
+                <a href="../index.html">Back to home page</a>
+            </div>
         </div>
     </top>
 
@@ -37,7 +46,7 @@
             <div class="projectContainer1">
                 <div class="project1">
                     <div class="project1Img"><img src="./src/img/todolist.png"></div>
-                    <button>Github</button>
+                    <a href="https://github.com/afrojsan/TodoList.git" target="_blink" ><button>Github</button></a>
                 </div>
             </div>
 
@@ -63,5 +72,6 @@
         </div>
     </footer>
 
+    <script src="./src/javascript/main.js"></script>
 </body>
 </html>
