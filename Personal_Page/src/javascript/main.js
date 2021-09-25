@@ -4,7 +4,6 @@ const wholeNarBar = document.querySelector('#wholeNarBar')
 
 function show() {
     navBar.style.display = 'none'
-    wholeNarBar.style.transition = 'width 2000ms'
     wholeNarBar.style.display = 'flex'
 }
 

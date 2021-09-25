@@ -7,13 +7,16 @@ body {
 .navBar {
     height: 54px;
     position: fixed;
+    background-color: rgb(252, 252, 252, 0.7);
+}
+
+.navBarImg {
+    width: 100vw;
 }
 
 .navBar img {
-    height: 40px;
     width: 40px;
     margin: 5px;
-    display: flex;
     cursor: pointer;
 }
 
@@ -28,12 +31,12 @@ body {
     box-shadow: 5px 5px 3px 1px #b1c4caab;
 }
 
+
 .navBarLogo {
     background-color: white;
 }
 
 .navBarLogo img{
-    height: 40px;
     width: 40px;
     margin: 5px;
     cursor: pointer;
@@ -129,6 +132,7 @@ body {
     border-radius: 20px;
     width: 90px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* footer setup */
