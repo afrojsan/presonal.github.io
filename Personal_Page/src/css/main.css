@@ -1,13 +1,19 @@
 body {
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: auto;
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 40px;
+    background-color: rgb(15, 15, 15);
 }
+/* [----------------------------------------------------] */
+                 /* navBar setup */
+/* [----------------------------------------------------] */
 
-/* navBar setup */
 .navBar {
     height: 54px;
     position: fixed;
-    background-color: rgb(252, 252, 252, 0.7);
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-top: -44px;
+    z-index: 2;
 }
 
 .navBarImg {
@@ -20,6 +26,7 @@ body {
     cursor: pointer;
 }
 
+
 .wholeNarBar {
     position: fixed;
     height: 100vh;
@@ -29,12 +36,10 @@ body {
     justify-content: space-between;
     background-color: aliceblue;
     box-shadow: 5px 5px 3px 1px #b1c4caab;
+    margin-top: -44px;
+    z-index: 2;
 }
 
-
-.navBarLogo {
-    background-color: white;
-}
 
 .navBarLogo img{
     width: 40px;
@@ -53,27 +58,81 @@ body {
     color: #353535;
 }
 
-/* main-title setup */
+.backToHomePage a:hover{
+    color: rgb(61, 136, 123);
+}
+/* [----------------------------------------------------] */
+                    /* main-slider setup */
+/* [----------------------------------------------------] */
+
 .title{
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/background.jpg");
-    background-size: cover;
+    text-align: center;
+    color: rgb(220, 166, 102);
 }
 
-.titleText {
-    color: white;
+.slider{
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    z-index: 3;
 }
 
-/* main-aboutMe setup */
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    90% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+
+}
+/* [----------------------------------------------------] */
+                /* main-aboutMe setup */
+/* [----------------------------------------------------] */
+
 .aboutMe{
     display: flex;
     align-items: center;
     height: 600px;
     width: 100%;
-    background-color: rgb(240, 240, 240);
+    margin-top: 20px;
+    border-top: rgb(220, 166, 102) solid 1px;
 }
 
 .aboutMePic{
@@ -84,25 +143,26 @@ body {
 .aboutMePic img {
     width:  170px;
     height: 265px;
-    box-shadow: 12px 12px 2px 1px rgb(170, 155, 154);
+    box-shadow: 8px 9px 7px 1px rgb(87 169 166 / 97%)
 }
 
 .aboutMeText{
     width: 67%;
     text-align: start;
-    font-size: 18px;
-    color: rgb(83, 223, 155);
+    font-size: 28px;
+    color: rgb(61, 136, 123);
+    font-family: 'Open Sans Condensed';
 }
-
-/* main-project setup */
-.projectTitleContainer{
-    background-color: rgb(183, 236, 250);
-}
+/* [----------------------------------------------------] */
+                /* main-project setup */
+/* [----------------------------------------------------] */
 
 .projectTitle{
     text-align: center;
     padding-top: 15px;
     font-size: 28px;
+    color: rgb(220, 166, 102);
+    border-top: rgb(220, 166, 102) solid 1px;
 }
 
 .personalProject{
@@ -110,8 +170,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    background-color: rgb(183, 236, 250);
 }
 
 .project1,
@@ -123,26 +181,39 @@ body {
 .project2 img {
     width: 400px;
     height: 200px;
+    border-radius: 10px;
 }
 
 
 .project1 button,
 .project2 button{
     margin: 10px 5px;
-    border-radius: 20px;
-    width: 90px;
+    width: 120px;
+    height: 35px;
     font-size: 16px;
     cursor: pointer;
+    color: rgb(61, 136, 123);
+    background-color: rgb(15, 15, 15);
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
-/* footer setup */
+.project1 button:hover,
+.project2 button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 166, 102);
+}
+/* [----------------------------------------------------] */
+                    /* footer setup */
+/* [----------------------------------------------------] */
+
 .contect {
-    border-top: 0.5px solid gray;
-    background-color: rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    border-top: rgb(220, 166, 102) solid 1px;
+    color: rgb(220, 166, 102);
 }
 
 .contectContainer {
@@ -156,4 +227,84 @@ body {
 
 .contect img {
     width: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* [----------------------------------------------------] */
+                    /* navBar setup */
+    /* [----------------------------------------------------] */
+    .navBar{
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+
+    .navBarImg{
+        width: 55px;
+        margin-left: 4px;
+    }
+
+    .wholeNarBar{
+        background-color: rgb(255, 255, 255, 0.7);
+        width: 100vh;
+        margin-top: -40px;
+        
+    }
+
+    .navBarLogo{
+        width: 57px;
+        margin-left: 10px;
+        margin-top: 46px;
+        border-radius: 10px;
+        }
+
+    .navBarLogo img{
+        width: 40px;
+        margin-left: 9px;
+        margin-top: 9px;
+    }
+
+    .backToHomePage{
+        border-top: rgb(61, 136, 123) solid 1px;
+    }
+
+    .backToHomePage a {
+        margin-top: 10px;
+    }
+
+    /* [----------------------------------------------------] */
+                    /* main slider setup */
+    /* [----------------------------------------------------] */
+    .title{
+        font-size: 12px;
+    }
+
+    .slider{
+        width: 60%;
+    }
+
+    /* [----------------------------------------------------] */
+                    /* main aboutMe setup */
+    /* [----------------------------------------------------] */
+    .aboutMe{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .aboutMeText{
+        padding-top: 20px;
+    }
+
+    /* [----------------------------------------------------] */
+                /* main-project setup */
+    /* [----------------------------------------------------] */
+    .personalProject{
+        flex-direction: column;
+    }
 }
