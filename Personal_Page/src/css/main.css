@@ -306,5 +306,15 @@ body {
     /* [----------------------------------------------------] */
     .personalProject{
         flex-direction: column;
+     }
+}
+
+@media only screen and (max-width: 560px){
+    .aboutMe{
+        height: 700px;
+    }
+
+    .aboutMePic{
+        margin-left: -50px;
     }
 }

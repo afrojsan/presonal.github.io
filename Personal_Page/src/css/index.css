@@ -37,7 +37,13 @@ header {
         font-size: 26px;
     }
 
+    .container{
+        text-align: center;
+    }
+
     .homePageButton{
-        margin-left: 300px;
+        margin-left: auto;
     }
 }
+
+
