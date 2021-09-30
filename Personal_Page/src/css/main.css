@@ -318,3 +318,9 @@ body {
         margin-left: -50px;
     }
 }
+
+@media only screen and (max-width: 480px){
+    .aboutMe{
+        height: 900px;
+    }
+}
