@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Calvin Chung Personal Website</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./src/img/smile-regular.svg" />
+    <link rel="stylesheet" href="./src/css/main2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="routeToTop" id="routeToTop">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- /* ---------------------------------------------------------------- */
+    /* ----------------------------Nav-Bar---------------------------------- */
+    /* --------------------------------------------------------------------- */ -->
+    <nav>
+        <div class="logo">
+            <a href="./main2.html"><h4>Calvin</h4></a>
+        </div>
+        <ul class="navLinks">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projectContainer">Project</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="navBtn">
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+        </div>
+    </nav>
+
+    <!-- /* ---------------------------------------------------------------- */
+    /* ----------------------------Image slider----------------------------- */
+    /* --------------------------------------------------------------------- */ -->
+    <div class="slideContainer">
+        <h4>Welcome to my website!</h4>
+        <ul class="slides">
+            <input type='radio' id="control-1" name="control" checked>
+            <input type='radio' id="control-2" name="control">
+            <input type='radio' id="control-3" name="control">
+            <input type='radio' id="control-4" name="control">
+
+    <!-- --------------left/right Btn--------------- -->
+        <div class="navigator slide-1">
+            <label for="control-4">
+                <i class="fas fa-arrow-left"></i>
+            </label>
+            <label for="control-2">
+                <i class="fas fa-arrow-right"></i>
+            </label>
+        </div>
+              
+        <div class="navigator slide-2">
+            <label for="control-1">
+                <i class="fas fa-arrow-left"></i>
+            </label>
+            <label for="control-3">
+                <i class="fas fa-arrow-right"></i>
+            </label>
+        </div>
+              
+        <div class="navigator slide-3">
+            <label for="control-2">
+                <i class="fas fa-arrow-left"></i>
+            </label>
+            <label for="control-4">
+                <i class="fas fa-arrow-right"></i>
+            </label>
+        </div>     
+
+        <div class="navigator slide-4">
+            <label for="control-3">
+                <i class="fas fa-arrow-left"></i>
+            </label>
+            <label for="control-1">
+                <i class="fas fa-arrow-right"></i>
+            </label>
+        </div>     
+    <!-- --------------left/right Btn--------------- -->
+
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            
+    <!-- -------------------radio Btn--------------- -->
+            <div class="controlsRadio">
+                <label id="controlsRadioBtn" for="control-1"></label>
+                <label id="controlsRadioBtn" for="control-2"></label>
+                <label id="controlsRadioBtn" for="control-3"></label>
+                <label id="controlsRadioBtn" for="control-4"></label>
+            </div>
+    <!-- -------------------radio Btn--------------- -->
+        </ul>
+    </div>
+    
+    <!-- /* ---------------------------------------------------------------- */
+    /* ----------------------------About Me--------------------------------- */
+    /* --------------------------------------------------------------------- */ -->
+    <div class="about" id="about">
+        <div class="selfImg">
+            <img src="./src/img/icon.png">
+        </div>
+        <div class="aboutME">
+            <p>I am a humble, preserving and hardworking person who is interested in IT industry. I keep equipping myself with technical(HTML, CSS, Javascript, React) and communication skills in coding bootcamp with full commitment. I am currently seeking a junior front-end web developer position to gain solid experience in web programming.</p>
+        </div>
+    </div>
+    <!-- /* ---------------------------------------------------------------- */
+    /* ----------------------------Project---------------------------------- */
+    /* --------------------------------------------------------------------- */ -->
+    <div class="projectContainer" id="projectContainer">
+        <div class="projectTitle">
+            <h4>Here is my some project here, is about the todolist and mini game, feel free to click the button to visi the project!</h4>
+        </div>
+        <div class="projectArea">
+            <div class="project">
+                <img src="./src/img/todolist.png">
+                <a href="https://github.com/afrojsan/TodoList.git" target="_blink"><button>Github</button></a>
+            </div>
+
+            <div class="project">
+                <img src="./src/img/miniGame.png">
+                <a href="https://afrojsan.github.io/miniGame.io/" target="_blink"><button>Github</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- /* ---------------------------------------------------------------- */
+    /* ----------------------------Contact---------------------------------- */
+    /* --------------------------------------------------------------------- */ -->
+    <div class="contact" id="contact">
+        <div class="name"><i class="far fa-user"> Calvin Chung</i></div>
+        <div class="phone"><i class="fas fa-mobile-alt"> +852 6355 2402</i></div>
+        <div class="email"><i class="far fa-envelope"> chung86813@gmail.com</i></div>
+    </div>
+
+    <script src="./src/javascript/main2.js"></script>
+</body>
+</html>
