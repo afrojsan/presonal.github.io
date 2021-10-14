@@ -113,7 +113,7 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
-.slideContainer h4 {
+.slideContainer p {
     position: absolute;
     z-index: 1;
     font-size: 34px;
@@ -285,6 +285,7 @@ nav {
     height: 100vh;
     display: flex;
     border-top: 1px solid rgb(61, 136, 123);
+    font-size: 32px;
 }
 
 .selfImg{
@@ -305,7 +306,6 @@ nav {
 .aboutME {
     width: 70%;
     color: rgb(61, 136, 123);
-    font-size: 32px;
     margin-right: 10px;
     display: flex;
     justify-self: center;
@@ -327,11 +327,11 @@ nav {
 .projectTitle{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 30%;
+    align-items: center;
 }
 
-.projectContainer h4{
+.projectContainer p{
     font-size: 32px;
     width: 70%;
     color: rgb(233, 233, 233);
@@ -404,8 +404,8 @@ nav {
         width: 38%;
     }
 
-    .projectContainer h4{
-        font-size: 24px;
+    .projectContainer p{
+        font-size: 28px;
         width: 60%;
     }
 
@@ -422,7 +422,7 @@ nav {
 
 
 /* --------------------------------------------------------------------- */
-/* --------------------Mobile - Responsive - 760px---------------------- */
+/* --------------------Mobile - Responsive - 768px---------------------- */
 /* --------------------------------------------------------------------- */
 @media screen and (max-width:768px) {
     body{
@@ -453,7 +453,7 @@ nav {
         align-items: center;
         right: 0;
         height: 100vh;
-        top: 5.3vh;
+        top: 5vh;
         background-color: rgb(61, 136, 123, 0.7);
         transform: translateX(100%);
         width: 30vh;
@@ -473,7 +473,7 @@ nav {
         transition: transform 0.5s ease-in;
     }
 
-    .slideContainer h4{
+    .slideContainer p{
         font-size: 46px;
     }
 
@@ -487,15 +487,23 @@ nav {
         align-items: center;
         justify-content: space-around;
     }
-    
 
     .aboutME p{
-        font-size: 26px;
+        font-size: 28px;
     }
 
-    .projectContainer h4{
-        font-size: 20px;
+    .projectTitle{
+        padding-top: 0px;
+    }
+
+    .projectContainer p{
+        font-size: 26px;
         width: 50%;
+    }
+
+    .project img{
+        width: 370px;
+        height: 200px;
     }
 }
 
@@ -503,22 +511,54 @@ nav {
 
 
 /* ---------------------------------------------------------------------- */
-/* --------------------Mobile - Responsive - 3750px---------------------- */
+/* --------------------Mobile - Responsive - 500px---------------------- */
 /* ---------------------------------------------------------------------- */
-@media screen and (max-width:375px) {
-    .slideContainer h4 {
+@media only screen and (max-width: 500px){
+    .aboutME p{
         font-size: 24px;
     }
 
-    .aboutME p{
-        font-size: 18px;
+    .projectTitle p{
+        font-size: 22px;
+    }
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* --------------------Mobile - Responsive - 375px---------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (max-width: 375px)  {
+    .slideContainer p {
+        font-size: 22px;
     }
 
     .selfImg{
-        width: 70%;
+        padding-right: 10%;
     }
 
-    .projectContainer{
-        height: 150vh;
+    .selfImg img {
+        width:  200px;
+        height: 260px;
+    }
+
+    .aboutME p{
+        font-size: 20px;
+    }
+
+    .projectTitle p{
+        font-size: 18px;
+    }
+
+    .project img{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .project button{
+        width: 150px;
+        height: 50px;
+
     }
 }
