@@ -334,7 +334,7 @@ nav {
 .projectContainer p{
     font-size: 32px;
     width: 70%;
-    color: rgb(233, 233, 233);
+    color: rgb(61, 136, 123);
 }
 
 .projectArea{
@@ -415,6 +415,7 @@ nav {
 
     .project{
         padding-top: 20px;
+        flex-direction: row;
     }
 }
 
@@ -489,7 +490,12 @@ nav {
     }
 
     .aboutME p{
-        font-size: 28px;
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .project{
+        flex-direction: column;
     }
 
     .projectTitle{
@@ -497,8 +503,8 @@ nav {
     }
 
     .projectContainer p{
-        font-size: 26px;
-        width: 50%;
+        font-size: 24px;
+        width: 90%;
     }
 
     .project img{
@@ -514,22 +520,13 @@ nav {
 /* --------------------Mobile - Responsive - 500px---------------------- */
 /* ---------------------------------------------------------------------- */
 @media only screen and (max-width: 500px){
-    .aboutME p{
+    /* .aboutME p{
         font-size: 24px;
     }
 
     .projectTitle p{
         font-size: 22px;
-    }
-}
-
-
-
-
-/* ---------------------------------------------------------------------- */
-/* --------------------Mobile - Responsive - 390px---------------------- */
-/* ---------------------------------------------------------------------- */
-@media only screen and (max-width: 480px)  {
+    } */
     .slideContainer p {
         font-size: 22px;
     }
