@@ -32,13 +32,10 @@ window.addEventListener("resize", () => {
 const scrollBtn = document.querySelector('#routeToTop')
 
 function showScrollBtn(){
-    if(window.pageYOffset > 100){
-        scrollBtn.classList.add('show')
+    if(window.pageYOffset < 100){
+        scrollBtn.style.display = 'none'
     }else{
-        scrollBtn.classList.remove('show')
+        scrollBtn.style.display = 'flex'
     }
 };
-
 window.addEventListener('scroll', showScrollBtn);
-
-showScrollBtn();
