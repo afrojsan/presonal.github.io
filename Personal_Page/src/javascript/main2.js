@@ -1,3 +1,15 @@
+function loading() {
+  if(window === onload){
+    document.querySelector('.loading').style.css = 'block'
+    document.querySelector('.finish').style.css = 'none'
+  }else{
+    document.querySelector('.loading').style.css = 'none'
+    document.querySelector('.finish').style.css = 'block'
+  }
+}
+
+window.addEventListener('load', loading)
+
 /* --------------------------------------------------------------------- */
 /* ----------------------------Nav-Bar animation------------------------ */
 /* --------------------------------------------------------------------- */
@@ -40,30 +52,59 @@ function showScrollBtn(){
 };
 window.addEventListener('scroll', showScrollBtn);
 
+/* --------------------------------------------------------------------- */
+/* ----------------------------fade in animation------------------------ */
+/* --------------------------------------------------------------------- */
 
-
-// let tl = gsap.timeline({
-//   scrollTrigger:{
-//     trigger: '.projectContainer',
-//   }
-// });
-// tl.from('.projectTitle', 1, { y: 100, autoApha: 0 })
-//   .from('.project', 1.5, { x: -250 , autoAlpha: 0 })
 gsap.from('nav', 2, { autoAlpha: 0, esae: Power0.easeNone })
+gsap.from('.sliderText', 2, { autoAlpha: 0, esae: Power0.easeNone, delay: 1 })
 
-gsap.from('.sliderText', 2, { autoAlpha: 0, esae: Power0.easeNone })
+gsap.from('.selfImg', {
+  x: -250,
+  duration: 1.5,
+  autoAlpha: 0,
+  scrollTrigger: '.about'
+})
+
+gsap.from('.aboutME', {
+  x: +250,
+  duration: 1.5,
+  delay: 1,
+  autoAlpha: 0,
+  scrollTrigger: '.about'
+})
 
 gsap.from('.project', {
   x: -250,
   autoAlpha: 0,
   duration: 1.5,
   delay: 1,
-  scrollTrigger: '.projectContainer'
+  scrollTrigger: '.project'
 })
 
 gsap.from('.projectTitle', {
   y: 100,
   autoAlpha: 0,
   duration: 1,
-  scrollTrigger: '.projectContainer'
+  scrollTrigger: '.project'
 })
+
+
+gsap.from('.name', {
+  autoAlpha: 0,
+  duration: 1,
+  scrollTrigger: '.name'
+})
+gsap.from('.phone', {
+  autoAlpha: 0,
+  duration: 1,
+  delay: 1,
+  scrollTrigger: '.name'
+})
+gsap.from('.email', {
+  autoAlpha: 0,
+  duration: 1,
+  delay: 2,
+  scrollTrigger: '.name'
+})
+
