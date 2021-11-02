@@ -39,3 +39,31 @@ function showScrollBtn(){
     }
 };
 window.addEventListener('scroll', showScrollBtn);
+
+
+
+// let tl = gsap.timeline({
+//   scrollTrigger:{
+//     trigger: '.projectContainer',
+//   }
+// });
+// tl.from('.projectTitle', 1, { y: 100, autoApha: 0 })
+//   .from('.project', 1.5, { x: -250 , autoAlpha: 0 })
+gsap.from('nav', 2, { autoAlpha: 0, esae: Power0.easeNone })
+
+gsap.from('.sliderText', 2, { autoAlpha: 0, esae: Power0.easeNone })
+
+gsap.from('.project', {
+  x: -250,
+  autoAlpha: 0,
+  duration: 1.5,
+  delay: 1,
+  scrollTrigger: '.projectContainer'
+})
+
+gsap.from('.projectTitle', {
+  y: 100,
+  autoAlpha: 0,
+  duration: 1,
+  scrollTrigger: '.projectContainer'
+})

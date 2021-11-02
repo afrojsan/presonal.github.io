@@ -1,48 +1,45 @@
 header {
-    background-image: url("../img/programming-code-background.png");
-    background-size: cover;
-    height: 100vh;
-    margin: -8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-image: url("../img/programming-code-background.png");
+  background-size: cover;
+  height: 100vh;
+  margin: -8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro {
-    font-size: 22px;
-    margin: 30px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: rgb(83, 223, 155);
+  font-size: 22px;
+  margin: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(83, 223, 155);
 }
 
 .homePageButton {
-    margin-left: 250px;
-    width: 140px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: black;
-    color: rgb(83, 223, 155);
-    font-size: 16px;
+  margin-left: 250px;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(83, 223, 155);
+  font-size: 16px;
 }
 
 .homePageButton:hover {
-    color: white;
+  color: white;
 }
 
+@media only screen and (max-width: 800px) {
+  .intro {
+    text-align: center;
+    font-size: 26px;
+  }
 
-@media only screen and (max-width: 800px){
-    .intro{
-        text-align: center;
-        font-size: 26px;
-    }
+  .container {
+    text-align: center;
+  }
 
-    .container{
-        text-align: center;
-    }
-
-    .homePageButton{
-        margin-left: auto;
-    }
+  .homePageButton {
+    margin-left: auto;
+  }
 }
-
-

@@ -1,566 +1,540 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .resize-animation-stopper * {
-    animation: none !important;
-    transition: none !important;
+  animation: none !important;
+  transition: none !important;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color:rgb(15, 15, 15);
-    color: aliceblue;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(15, 15, 15);
+  color: aliceblue;
 }
 
 .routeToTop {
-    display: none;
+  display: none;
 }
 
 .routeToTop a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-.routeToTop i{
-    position: fixed;
-    z-index: 100;
-    right: 5%;
-    bottom: 10%;
-    font-size: 26px;
-    border: 1px solid rgb(233, 233, 233, 0.7);
-    width: 50px;
-    height: 50px;
-    background-color: rgb(146, 146, 146 , 0.2);
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.routeToTop i {
+  position: fixed;
+  z-index: 100;
+  right: 5%;
+  bottom: 10%;
+  font-size: 26px;
+  border: 1px solid rgb(233, 233, 233, 0.7);
+  width: 50px;
+  height: 50px;
+  background-color: rgb(146, 146, 146, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.routeToTop i:hover{
-    color: rgb(61, 136, 123);
-    border: 1px solid rgb(61, 136, 123);
+.routeToTop i:hover {
+  color: rgb(61, 136, 123);
+  border: 1px solid rgb(61, 136, 123);
 }
-
-
-
 
 /* --------------------------------------------------------------------- */
 /* ----------------------------Nav-Bar---------------------------------- */
 /* --------------------------------------------------------------------- */
 .logo a {
-    text-decoration: none;
-    color: rgb(233, 233, 233);
-    letter-spacing: 2px;
-    font-size: 20px;
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
-.logo a:hover{
-    color:rgb(61, 136, 123);
+.logo a:hover {
+  color: rgb(61, 136, 123);
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(61, 136, 123, 0.2);
-    height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(61, 136, 123, 0.2);
+  height: 7vh;
 }
 
 .navLinks {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    text-decoration: none;
-    letter-spacing: 2px;
-    list-style: none;
-    z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  text-decoration: none;
+  letter-spacing: 2px;
+  list-style: none;
+  z-index: 100;
 }
 
 .navLinks a {
-    text-decoration: none;
-    color: rgb(233, 233, 233);
+  text-decoration: none;
+  color: rgb(233, 233, 233);
 }
 
-.navLinks a:hover{
-    color:rgb(61, 136, 123);
+.navLinks a:hover {
+  color: rgb(61, 136, 123);
 }
 
-.navBtn{
-    display: none;
+.navBtn {
+  display: none;
 }
 
 .line1,
 .line2,
-.line3{
-    background-color: rgb(233, 233, 233);
-    margin: 5px;
-    width: 30px;
-    height: 5px;
+.line3 {
+  background-color: rgb(233, 233, 233);
+  margin: 5px;
+  width: 30px;
+  height: 5px;
 }
-
-
-
 
 /* --------------------------------------------------------------------- */
 /* ----------------------------Image slider----------------------------- */
 /* --------------------------------------------------------------------- */
-.slideContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Rubik', sans-serif;
+.slideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
 }
 
 .slideContainer p {
-    position: absolute;
-    z-index: 1;
-    font-size: 34px;
-    top: 30%;
+  position: absolute;
+  z-index: 1;
+  font-size: 34px;
+  top: 30%;
 }
 
-.slides{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.slide{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s transform ease-in-out;
+.slide {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s transform ease-in-out;
 }
-
-
 
 /* -----------------background IMG -----------------*/
-.slide:nth-of-type(1){
-    background-image: url('../img/img3.jpg');
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
+.slide:nth-of-type(1) {
+  background-image: url("../img/img3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.slide:nth-of-type(2){
-    background-image: url('../img/img2.jpg');
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-    left: 100%;
+.slide:nth-of-type(2) {
+  background-image: url("../img/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 100%;
 }
 
-.slide:nth-of-type(3){
-    background-image: url('../img/img1.jpg');
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-    left: 200%;
+.slide:nth-of-type(3) {
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 200%;
 }
 
-.slide:nth-of-type(4){
-    background-image: url('../img/img4.jpg');
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-    left: 300%;
+.slide:nth-of-type(4) {
+  background-image: url("../img/img4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 300%;
 }
 /*--------- setup radio btn style ---------*/
-.slides input{
-    position: relative;
-    z-index: 100;
-    display: none;
+.slides input {
+  position: relative;
+  z-index: 100;
+  display: none;
 }
 
-.controlsRadio{
-    position: absolute;
-    width: 100%;
-    bottom: 12px;
-    text-align: center;
+.controlsRadio {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
 }
 
-.controlsRadio label{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 3px;
-    border: 2px solid white;
-    cursor: pointer;
+.controlsRadio label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid white;
+  cursor: pointer;
 }
 /*--------- setup arrow btn style ---------*/
 .navigator {
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
-    width: 100%;
-    z-index: 1;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    display: none;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 100%;
+  z-index: 1;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: none;
 }
 
 .navigator i {
-    font-size: 32px;
-    color: white;
-    cursor: pointer;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
 }
 
-.navigator i:hover{
-    color: rgb(61, 136, 123);
+.navigator i:hover {
+  color: rgb(61, 136, 123);
 }
 
 /* ---------set btn choose color background change---------- */
 .slides input:nth-of-type(1):checked ~ .controlsRadio label:nth-of-type(1) {
-    background-color: black;
+  background-color: black;
 }
 
 .slides input:nth-of-type(2):checked ~ .controlsRadio label:nth-of-type(2) {
-    background-color: black;
+  background-color: black;
 }
 
 .slides input:nth-of-type(3):checked ~ .controlsRadio label:nth-of-type(3) {
-    background-color: black;
+  background-color: black;
 }
 
 .slides input:nth-of-type(4):checked ~ .controlsRadio label:nth-of-type(4) {
-    background-color: black;
+  background-color: black;
 }
 
 /* ---------set arrow Btn naviga to other pic---------- */
 .slides input:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
-    display: flex;
+  display: flex;
 }
-  
+
 .slides input:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
-    display: flex;
+  display: flex;
 }
-  
+
 .slides input:nth-of-type(3):checked ~ .navigator:nth-of-type(3) {
-    display: flex;
+  display: flex;
 }
 
 .slides input:nth-of-type(4):checked ~ .navigator:nth-of-type(4) {
-    display: flex;
+  display: flex;
 }
 
 /* ---------set radios Btn naviga to other pic---------- */
 .slides input:nth-of-type(1):checked ~ .slide {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .slides input:nth-of-type(2):checked ~ .slide {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .slides input:nth-of-type(3):checked ~ .slide {
-    transform: translateX(-200%);
+  transform: translateX(-200%);
 }
 
 .slides input:nth-of-type(4):checked ~ .slide {
-    transform: translateX(-300%);
+  transform: translateX(-300%);
 }
-
-
-
 
 /* --------------------------------------------------------------------- */
 /* ------------------------------About Me------------------------------- */
 /* --------------------------------------------------------------------- */
-.about{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    border-top: 1px solid rgb(61, 136, 123);
-    font-size: 32px;
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  border-top: 1px solid rgb(61, 136, 123);
+  font-size: 32px;
 }
 
-.selfImg{
-    width: 30%;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    margin-left: 10%;
+.selfImg {
+  width: 30%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-left: 10%;
 }
 
-.selfImg img {
-    width:  210px;
-    height: 320px;
-    text-align: center;
-    box-shadow: 8px 9px 7px 1px rgb(87 169 166 / 97%);
+.aboutMePic {
+  width: 210px;
+  height: 320px;
+  text-align: center;
+  box-shadow: 8px 9px 7px 1px rgb(87 169 166 / 97%);
 }
 
 .aboutME {
-    width: 70%;
-    color: rgb(61, 136, 123);
-    margin-right: 10px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
+  width: 70%;
+  color: rgb(61, 136, 123);
+  margin-right: 10px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
-
-
-
 
 /* --------------------------------------------------------------------- */
 /* ------------------------------Project-------------------------------- */
 /* --------------------------------------------------------------------- */
-.projectContainer{
-    border-top: 1px solid rgb(61, 136, 123);
-    width: 100%;
-    height: 100vh;
+.projectContainer {
+  border-top: 1px solid rgb(61, 136, 123);
+  width: 100%;
+  height: 100vh;
 }
 
-.projectTitle{
-    display: flex;
-    justify-content: center;
-    height: 30%;
-    align-items: center;
+.projectTitle {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  align-items: center;
 }
 
-.projectContainer p{
-    font-size: 32px;
-    width: 70%;
-    color: rgb(61, 136, 123);
+.projectContainer p {
+  font-size: 32px;
+  width: 70%;
+  color: rgb(61, 136, 123);
 }
 
-.projectArea{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60%;
+.projectArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
 }
 
-.project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project img{
-    width: 450px;
-    height: 260px;
-    border-radius: 20px;
+.project img {
+  width: 450px;
+  height: 260px;
+  border-radius: 20px;
 }
 
-.project button{
-    width: 180px;
-    height: 60px;
-    margin-top: 30px;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: rgb(15, 15, 15, 0.5);
-    color: rgb(233, 233, 233);
-    border-color: rgb(230, 228, 228);
+.project button {
+  width: 180px;
+  height: 60px;
+  margin-top: 30px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: rgb(15, 15, 15, 0.5);
+  color: rgb(233, 233, 233);
+  border-color: rgb(230, 228, 228);
 }
 
-.project button:hover{
-    color: rgb(61, 136, 123);
-    background-color: rgb(255, 255, 255);
+.project button:hover {
+  color: rgb(61, 136, 123);
+  background-color: rgb(255, 255, 255);
 }
-
-
 
 /* --------------------------------------------------------------------- */
 /* ------------------------------Contact-------------------------------- */
 /* --------------------------------------------------------------------- */
-.contact{
-    border-top: 1px solid rgb(61, 136, 123);
-    height: 20vh;
-    font-size: 18px;
-    text-align: center;
+.contact {
+  border-top: 1px solid rgb(61, 136, 123);
+  height: 20vh;
+  font-size: 18px;
+  text-align: center;
 }
 
-.contact i{
-    padding: 20px;
+.contact i {
+  padding: 20px;
 }
-
-
 
 /* --------------------------------------------------------------------- */
 /* -------------------Mobile - Responsive - 1024px---------------------- */
 /* --------------------------------------------------------------------- */
-@media screen and (max-width:1024px) {
-    .navLinks{
-        width: 60%;
-    }
+@media screen and (max-width: 1024px) {
+  .navLinks {
+    width: 60%;
+  }
 
-    .selfImg{
-        width: 38%;
-    }
+  .selfImg {
+    width: 38%;
+  }
 
-    .projectContainer p{
-        font-size: 28px;
-        width: 60%;
-    }
+  .projectContainer p {
+    font-size: 28px;
+    width: 60%;
+  }
 
-    .projectArea{
-        flex-direction: column;
-    }
+  .projectArea {
+    flex-direction: column;
+  }
 
-    .project{
-        padding-top: 20px;
-        flex-direction: row;
-    }
+  .project {
+    padding-top: 20px;
+    flex-direction: row;
+  }
 }
-
-
-
 
 /* --------------------------------------------------------------------- */
 /* --------------------Mobile - Responsive - 768px---------------------- */
 /* --------------------------------------------------------------------- */
-@media screen and (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 
-    nav{
-        position: fixed;
-        z-index: 100;
-        width: 100vh;
-        background-color: rgb(13, 39, 35);
-        justify-content: space-around;
-    }
+  nav {
+    position: fixed;
+    z-index: 100;
+    width: 100vh;
+    background-color: rgb(13, 39, 35);
+    justify-content: space-around;
+  }
 
-    .logo {
-        position: fixed;
-        left: 20%;
-    }
+  .logo {
+    position: fixed;
+    left: 20%;
+  }
 
-    .logo a{
-        font-size: 28px;
-    }
+  .logo a {
+    font-size: 28px;
+  }
 
-    .navLinks{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        height: 100vh;
-        top: 5vh;
-        background-color: rgb(61, 136, 123, 0.7);
-        transform: translateX(100%);
-        width: 30vh;
-        overflow-x: auto;
-    }
-    
-    
-    .navBtn {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        right: 10%;
-    }
-    
-    .open{
-        transform: translateX(0%);
-        transition: transform 0.5s ease-in;
-    }
+  .navLinks {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    height: 100vh;
+    top: 5vh;
+    background-color: rgb(61, 136, 123, 0.7);
+    transform: translateX(100%);
+    width: 30vh;
+    overflow-x: auto;
+  }
 
-    .slideContainer p{
-        font-size: 46px;
-    }
+  .navBtn {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 10%;
+  }
 
-    .navigator i {
-        font-size: 42px;
-    }
+  .open {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
 
-    .about{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
+  .slideContainer p {
+    font-size: 46px;
+  }
 
-    .aboutME p{
-        font-size: 24px;
-        width: 100%;
-    }
+  .navigator i {
+    font-size: 42px;
+  }
 
-    .project{
-        flex-direction: column;
-    }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-    .projectTitle{
-        padding-top: 0px;
-    }
+  .aboutME p {
+    font-size: 24px;
+    width: 100%;
+  }
 
-    .projectContainer p{
-        font-size: 24px;
-        width: 90%;
-    }
+  .project {
+    flex-direction: column;
+  }
 
-    .project img{
-        width: 370px;
-        height: 200px;
-    }
+  .projectTitle {
+    padding-top: 0px;
+  }
+
+  .projectContainer p {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .project img {
+    width: 370px;
+    height: 200px;
+  }
 }
-
-
-
 
 /* ---------------------------------------------------------------------- */
 /* --------------------Mobile - Responsive - 500px---------------------- */
 /* ---------------------------------------------------------------------- */
-@media only screen and (max-width: 500px){
-    /* .aboutME p{
+@media only screen and (max-width: 500px) {
+  /* .aboutME p{
         font-size: 24px;
     }
 
     .projectTitle p{
         font-size: 22px;
     } */
-    .slideContainer p {
-        font-size: 22px;
-    }
+  .slideContainer p {
+    font-size: 22px;
+  }
 
-    .selfImg{
-        padding-right: 10%;
-    }
+  .selfImg {
+    padding-right: 10%;
+  }
 
-    .selfImg img {
-        width:  150px;
-        height: 240px;
-    }
+  .selfImg img {
+    width: 150px;
+    height: 240px;
+  }
 
-    .aboutME p{
-        font-size: 20px;
-    }
+  .aboutME p {
+    font-size: 20px;
+  }
 
-    .projectTitle p{
-        width: 85%;
-        font-size: 21px;
-    }
+  .projectTitle p {
+    width: 85%;
+    font-size: 21px;
+  }
 
-    .project img{
-        width: 300px;
-        height: 180px;
-    }
-    
-    .project button{
-        width: 150px;
-        height: 50px;
+  .project img {
+    width: 300px;
+    height: 180px;
+  }
 
-    }
+  .project button {
+    width: 150px;
+    height: 50px;
+  }
 }
