@@ -58,6 +58,9 @@ window.addEventListener('scroll', showScrollBtn);
 
 gsap.from('nav', 2, { autoAlpha: 0, esae: Power0.easeNone })
 gsap.from('.sliderText', 2, { autoAlpha: 0, esae: Power0.easeNone, delay: 1 })
+gsap.from('.slideContainer', 2, { autoAlpha: 0, esae: Power0.easeNone })
+
+
 
 gsap.from('.selfImg', {
   x: -250,
