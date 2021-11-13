@@ -1,15 +1,3 @@
-function loading() {
-  if(window === onload){
-    document.querySelector('.loading').style.css = 'block'
-    document.querySelector('.finish').style.css = 'none'
-  }else{
-    document.querySelector('.loading').style.css = 'none'
-    document.querySelector('.finish').style.css = 'block'
-  }
-}
-
-window.addEventListener('load', loading)
-
 /* --------------------------------------------------------------------- */
 /* ----------------------------Nav-Bar animation------------------------ */
 /* --------------------------------------------------------------------- */
